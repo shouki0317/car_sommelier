@@ -1,0 +1,131 @@
+/* アカウント作成画面----------------------------------------------------- */
+.contact {
+    /* margin-top: 130px; */
+    padding: 0 15%;
+}
+
+.contact .head {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.contact_header {
+    border-bottom: 6px solid #2f3e5e;
+    padding-top: 30px;
+}
+
+.contact .main_form {
+    margin: 30px 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.contact p {
+    font-weight: bold;
+}
+
+.contact .explanation {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact .form_item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_item_label .msg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.form_item_input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.form_item_textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 300px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+
+.contact .col-1-4 {
+    margin-top: 60px;
+}
+
+
+
+/* 確認画面以降----------------------------------------------------- */
+.contact_create .return {
+    background-color: #b3b4b5;
+    color: #000;
+    margin-top: 50px;
+}
+
+.contact_create .col-1-4 {
+    margin-top: 30px;
+}
+
+.contact .verification {
+    margin: 30px 0 60px;
+    padding: 1rem 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verification .explanation {
+    margin-bottom: 45px;
+}
+
+.return_btn {
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+    display: inline-block;
+    width:30%;
+    color:#000;
+    background-color: #b3b4b5;
+    padding: 12px 0;
+    margin: 15px 0 0 ;
+    text-decoration: none;
+}
+
+.return_btn:hover {
+    opacity: 0.8;
+    color:#000;
+}
+
+.content_right {
+    text-align: right;
+    width: 70%;
+    margin: 0;
+}
+
+.content_right p {
+    font-weight: normal;
+}

@@ -1,0 +1,366 @@
+/* ガソリンスタンド検索----------------------------------------------------- */
+.gs_search_header {
+    border-bottom: 6px solid #2f3e5e;
+}
+
+.gs_search .main_button {
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: .5s;
+    display: inline-block;
+    width: 24%;
+    color:#fff;
+    background-color: #2f3e5e;
+    padding: 12px 0;
+    margin: 15px 0 25px;
+}
+
+.gs_search .main_button:hover {
+    opacity: 0.8;
+}
+
+.geo_location {
+    margin: 15px 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gs_search .address {
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 20px 0 0;
+    border-radius: 7px;
+    border: 1px solid #abaaa9;
+}
+
+.geo_location .gl_button {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #000;
+    transition: .5s;
+    display: inline-block;
+    width: 35%;
+    color:#fff;
+    background-color: #2f3e5e;
+}
+
+
+.selectbox-003 {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+.selectbox-003::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 7px;
+    background-color: #777;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-003 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 200px;
+    height: 40px;
+    padding: 5px 50px 5px 15px;
+    border: 1px solid #abaaa9;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+}
+
+.search_inner {
+    margin-top: 30px;
+}
+
+.gs_search h3 {
+    font-size: 1.2rem;
+}
+
+.gs_search label {
+    padding-top: 8px;
+}
+
+.gs_search .explanation {
+    margin-top: 35px;
+}
+
+.gs_search_error {
+    color: red;
+    margin-bottom: 0;
+}
+
+
+
+/* ガソリンスタンド店舗検索結果----------------------------------------------------- */
+.gas_station_head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #2f3e5e;
+    color: #2f3e5e;
+    padding-top: 15px;
+    font-size: 1.5rem;
+}
+
+.gas_station_head h2 {
+    border-bottom: none;
+    padding: 0 0 3px;
+    margin: 0;
+}
+
+.total p {
+    padding: 3px 10px 0 0;
+    margin: 0;
+    font-size: 1.05rem;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.gas_station_result {
+    margin: 0 8px;
+}
+
+.gas_station_group {
+    margin: 10px 3rem;
+    border-bottom: 1px solid #2f3e5e;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+}
+
+.gas_station_name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.gas_station_address {
+    margin: 0 0 10px;
+}
+
+.self {
+    background-color: #1f32db;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 10px 16px;
+    margin: 0 20px 0 5px;
+    border-radius: 12px;
+}
+
+.full_service {
+    background-color: #c72c1e;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 10px 9px;
+    margin: 0 20px 0 5px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+}
+
+.unknown {
+    background-color: #b1b1b5;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 13px 16px;
+    margin: 0 20px 0 5px;
+    border-radius: 12px;
+}
+
+.self1 {
+    padding: 0;
+    margin: 0;
+}
+
+.full_service1 {
+    padding: 0;
+    margin: 0;
+}
+
+.full_service2 {
+    padding: 0;
+    margin: 0;
+}
+
+.unknown1 {
+    padding: 0;
+    margin: 0;
+}
+
+.contents a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.pagenate {
+    margin: 30px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.page-item.active .page-link {
+    background-color: #2f3e5e;
+    border-color: #2f3e5e;
+}
+
+.page-link {
+    color: #2f3e5e;
+    font-weight: bold;
+    border-color: #bdbdbd;
+}
+
+.page-link:hover {
+    color: #2f3e5e; 
+}
+
+.page-item {
+    border-color: #bdbdbd;
+}
+
+.page-item:hover {
+    border-color: #bdbdbd;
+    color: #2f3e5e; 
+}
+
+
+
+/* ガソリンスタンド店舗検索詳細----------------------------------------------------- */
+.gas_station_detail {
+    margin-top: 30px;
+}
+
+.detail_top {
+    display: flex;
+    justify-content: left;
+    margin-left: 3rem;
+    margin-bottom: 40px;
+}
+
+.gas_station_detail .store_name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gas_station_detail .address {
+    font-size: 1.15rem;
+    text-align: left;
+    margin: 0;
+}
+
+.gas_station_detail .main_info {
+    margin: 0 9.5rem 0 9.5rem;
+}
+
+.gas_station_detail .info {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2f3e5e;
+}
+
+.gas_station_detail .info p {
+    margin-bottom: 0;
+}
+
+.gas_station_detail .info .title {
+    margin-bottom: 0;
+    color: #2f3e5e;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.gas_station_detail .info .inside1 {
+    margin-left: 2.3rem;
+}
+
+.gas_station_detail .info .inside2 {
+    margin-left: 2.3rem;
+}
+
+.gas_station_detail .info .inside3 {
+    margin-left: 2rem;
+}
+
+.gas_station_detail .info .inside4 {
+    margin-left: 3.3rem;
+}
+
+.detail_icon .self {
+    background-color: #1f32db;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 23px 29px;
+    margin: 0 20px 0 15px;
+    border-radius: 12px;
+}
+
+.detail_icon .full_service {
+    background-color: #c72c1e;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 17px 18px;
+    margin: 0 20px 0 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.detail_icon .unknown {
+    background-color: #b1b1b5;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 25px 29px;
+    margin: 0 20px 0 15px;
+    border-radius: 12px;
+}
+
+.detail_icon .self1 {
+    padding: 0;
+    margin: 0;
+}
+
+.detail_icon .full_service1 {
+    padding: 0;
+    margin: 0;
+}
+
+.detail_icon .full_service2 {
+    padding: 0;
+    margin: 0;
+}
+
+.detail_icon .unknown1 {
+    padding: 0;
+    margin: 0;
+}
+
+.detail_return_btn {
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+    display: inline-block;
+    width:23%;
+    color:#000;
+    background-color: #b3b4b5;
+    font-weight: 500;
+    padding: 12px 0;
+    margin: 30px 0 20px;
+  }
+  
+.detail_return_btn:hover {
+    opacity: 0.8;
+}
